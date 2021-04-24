@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.hero-img {
+  background-image: url(images/pexels-pixabay-34225.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-container {
+  position: relative;
+}
+
+.logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
+}
+
+.fa-bars {
+  padding-left: 35px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.fa-bars.show {
+  color: coral;
+}
+
+nav {
+  background-color: #333;
+  width: 100px;
+  position: fixed;
+  top: 38px;
+  left: 0;
+  height: 100vh;
+  z-index: 0;
+  transition: transform 0.3s ease-in;
+  transform: translateX(-100%);
+}
+
+nav.active {
+  transform: translateX(0);
+}
+
+nav ul li {
+  margin: 50px 40px 40px 40px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  color: coral;
+}
+
+.name,
+.logo,
+.title {
+  margin-left: 10px;
+}
+
+.logo,
+.title {
+  color: coral;
+}
+
+section {
+  height: 100vh;
+  color: coral;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
