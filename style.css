@@ -12,11 +12,21 @@ html {
 
 a {
   text-decoration: none;
-  color: #fff;
+  /* color: #fff; */
 }
 
 li {
   list-style-type: none;
+}
+
+p {
+  padding: 20px;
+  color: #999;
+  line-height: 1.6;
+}
+
+h3 {
+  padding: 20px;
 }
 
 .hero-img {
@@ -71,7 +81,11 @@ nav ul li {
   text-align: center;
 }
 
-nav ul li a:hover {
+.sidebar-links {
+  color: #fff;
+}
+
+nav ul li a i:hover {
   color: coral;
 }
 
@@ -82,15 +96,52 @@ nav ul li a:hover {
 }
 
 .logo,
-.title {
+.title a {
   color: coral;
+}
+
+.name a {
+  color: #fff;
 }
 
 section {
   height: 100vh;
+  max-width: 600px;
   color: coral;
-  text-align: center;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  margin: auto;
+}
+
+.fab {
+  padding: 20px 20px 0px 20px;
+  color: #999;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #999;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.links a {
+  color: #999;
+}
+
+@media screen and (min-width: 600px) {
+  .icon-container {
+    flex-direction: row;
+  }
 }

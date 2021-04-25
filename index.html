@@ -8,33 +8,88 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>WAMSTEKER | WEBDEV</title>
 </head>
 <body>
-    <div class="main-container">
+    <header>
         <div class="logo-container">
             <i class="fas fa-bars"></i>
-            <span class="name">EMILE WAMSTEKER</span>
+            <span class="name"><a href="#home">EMILE WAMSTEKER</a></span>
             <span class="logo"><i class="fas fa-cube"></i></span>
-            <span class="title">WEB DEVELOPER</span>
+            <span class="title"><a href="#home">WEB DEVELOPER</a></span>
         </div>
+    </header>
+    <main class="main-container">
         <div id="home" class="hero-img"></div>
         <nav>
             <ul>
-                <li><a href="#home"><i class="fas fa-home"></i></a></li>
-                <li><a href="#about"><i class="fas fa-info-circle"></i></a></li>
-                <li><a href="#projects"><i class="fas fa-project-diagram"></i></a></li>
-                <li><a href="#skills"><i class="fas fa-tools"></i></a></li>
-                <li><a href="#contact"><i class="fas fa-address-card"></i></a></li>
+                <li><a href="#home"><i class="fas fa-home sidebar-links"></i></a></li>
+                <li><a href="#about"><i class="fas fa-info-circle sidebar-links"></i></a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram sidebar-links"></i></a></li>
+                <li><a href="#skills"><i class="fas fa-tools sidebar-links"></i></a></li>
+                <li><a href="#contact"><i class="fas fa-address-card sidebar-links"></i></a></li>
             </ul>
         </nav>
-        <section id="about">about</section>
-        <section id="projects">projects</section>
-        <section id="skills">skills</section>
-        <section id="contact">contact</section>
-        <footer>This is the footer</footer>
+        <section id="about">
+            <h3>about</h3>
+            <p>I have a Bachelor of Science in Psychology with an emphasis in Statistics and Research Methodology. After college, I
+            traveled to Prague and taught English as a second language for a year.</p>
+            
+            <p>Since then, I have worked as a freelance photojournalist for numerous news gathering organizations including the
+            Associated Press, The New York Times, USA Today, the Wall Street Journal, Bloomberg News, and Education Week.</p>
+            
+            <p>I have always loved technology. What drew me into web development was a problem I needed to solve as a photographer. I
+            was looking for a stand-alone keyword harvester, but couldn't find anything off-the-shelf, so I built one using Python
+            and its Natural Language Toolkit library. The excitement that came with building something from nothing, that solved a problem, was what 
+            gave me the impetus to pursue software and web development.</p>
+            
+            <p>If you are looking to hire an innovative and resourceful developer, please reach out. I am always excited to work with
+            other developers to create problem solving applications.</p>   
+        </section>
+        <section id="projects">
+            <h3>projects</h3>
+        </section>
+        <section id="skills">
+            <h3>skills</h3>
+            <div class="icon-container">
+                <div class="skills-container">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <small>HTML5</small>
+                </div>
+                <div class="skills-container">
+                    <i class="fab fa-css3 fa-3x"></i>
+                    <small>CSS3</small>
+                </div>
+                <div class="skills-container">
+                    <i class="fab fa-js fa-3x"></i>
+                    <small>Javascript</small>
+                </div>
+                <div class="skills-container">
+                    <i class="fab fa-python fa-3x"></i>
+                    <small>Python</small>
+                </div>
+                <div class="skills-container">
+                    <i class="fab fa-react fa-3x"></i>
+                    <small>React</small>
+                </div>
+                <div class="skills-container">
+                    <i class="fab fa-node fa-3x"></i>
+                    <small>Nodejs</small>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h3>contact</h3>
+            <p>I'd be delighted to hear from you. Please feel free to contact or follow me at:</p>
+            <ul>
+                <li class="links"><a href="">-My email</a></li>
+                <li class="links"><a href="">-LinkedIn</a></li>
+                <li class="links"><a href="">-GitHub</a></li>
+            </ul>
 
-    </div>
+        </section>
+    </main>
+    <footer>&#169 emile wamsteker</footer>
     
     
     <script src="script.js"></script>
